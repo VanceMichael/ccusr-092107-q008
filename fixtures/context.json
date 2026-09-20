@@ -1,0 +1,10 @@
+{
+  "domain": "housing-fund-adjudication",
+  "version": 1,
+  "facts": [
+    "提取场景由六种扩展为九种",
+    "缴存记录将实现全国互信互认",
+    "违法提取和骗贷对应不同期限的使用限制"
+  ],
+  "sample_id": "sample-008"
+}
