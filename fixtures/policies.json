@@ -1,0 +1,97 @@
+{
+  "cities": [
+    {
+      "city": "示例市",
+      "versions": [
+        {
+          "version": 1,
+          "effective_from": "2025-01-01",
+          "effective_to": "2026-07-01",
+          "scenarios": {
+            "装修": {
+              "annual_limit": 30000,
+              "requires_vouchers": true,
+              "requires_family_auth": true
+            },
+            "物业费": {
+              "annual_limit": 6000,
+              "requires_vouchers": true,
+              "requires_family_auth": false
+            },
+            "适老化改造": {
+              "annual_limit": 20000,
+              "requires_vouchers": true,
+              "requires_family_auth": true
+            },
+            "加装电梯": {
+              "annual_limit": 50000,
+              "requires_vouchers": true,
+              "requires_family_auth": true
+            }
+          },
+          "restriction_years": {
+            "违法提取": 3,
+            "骗提骗贷": 5
+          }
+        },
+        {
+          "version": 2,
+          "effective_from": "2026-07-01",
+          "effective_to": null,
+          "scenarios": {
+            "装修": {
+              "annual_limit": 20000,
+              "requires_vouchers": true,
+              "requires_family_auth": true
+            },
+            "物业费": {
+              "annual_limit": 6000,
+              "requires_vouchers": true,
+              "requires_family_auth": false
+            },
+            "适老化改造": {
+              "annual_limit": 24000,
+              "requires_vouchers": true,
+              "requires_family_auth": true
+            },
+            "加装电梯": {
+              "annual_limit": 50000,
+              "requires_vouchers": true,
+              "requires_family_auth": true
+            }
+          },
+          "restriction_years": {
+            "违法提取": 3,
+            "骗提骗贷": 5
+          }
+        }
+      ]
+    },
+    {
+      "city": "邻市",
+      "versions": [
+        {
+          "version": 1,
+          "effective_from": "2025-01-01",
+          "effective_to": null,
+          "scenarios": {
+            "装修": {
+              "annual_limit": 15000,
+              "requires_vouchers": true,
+              "requires_family_auth": true
+            },
+            "物业费": {
+              "annual_limit": 4800,
+              "requires_vouchers": true,
+              "requires_family_auth": false
+            }
+          },
+          "restriction_years": {
+            "违法提取": 3,
+            "骗提骗贷": 5
+          }
+        }
+      ]
+    }
+  ]
+}

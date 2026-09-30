@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "账户样例",
+  "type": "object",
+  "required": ["accounts"],
+  "properties": {
+    "accounts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["account_id", "balance"],
+        "properties": {
+          "account_id": { "type": "string", "minLength": 1 },
+          "balance": { "type": "integer", "minimum": 0 },
+          "frozen": { "type": "integer", "minimum": 0 },
+          "withdrawals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["house_id", "scenario", "amount", "paid_at"],
+              "properties": {
+                "house_id": { "type": "string", "minLength": 1 },
+                "scenario": { "type": "string", "minLength": 1 },
+                "amount": { "type": "integer", "minimum": 1 },
+                "paid_at": { "type": "string", "format": "date-time" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "restrictions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["kind", "recorded_at"],
+              "properties": {
+                "kind": { "type": "string", "minLength": 1 },
+                "recorded_at": { "type": "string", "format": "date-time" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
