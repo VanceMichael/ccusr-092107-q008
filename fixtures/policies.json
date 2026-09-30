@@ -1,0 +1,77 @@
+{
+  "scenarios": [
+    { "code": "purchase", "name": "购买自住住房" },
+    { "code": "construction", "name": "建造、翻建、大修自住住房" },
+    { "code": "rent", "name": "租房" },
+    { "code": "loan_repayment", "name": "偿还购房贷款本息" },
+    { "code": "renovation", "name": "装修" },
+    { "code": "property_fee", "name": "物业费" },
+    { "code": "elderly_friendly", "name": "适老化改造" },
+    { "code": "elevator", "name": "加装电梯" },
+    { "code": "major_illness", "name": "大病医疗" }
+  ],
+  "cities": [
+    {
+      "city_code": "320199",
+      "city_name": "宁城（虚构）",
+      "mutual_recognition_from": "2026-08-01",
+      "versions": [
+        {
+          "version": 1,
+          "effective_from": "2026-09-01",
+          "effective_to": "2026-10-01",
+          "rules": {
+            "purchase": { "annual_quota": null, "required_months": 6, "needs_voucher": false, "needs_family_auth": false, "frequency_years": null },
+            "construction": { "annual_quota": null, "required_months": 6, "needs_voucher": false, "needs_family_auth": false, "frequency_years": null },
+            "rent": { "annual_quota": 24000, "required_months": 3, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "loan_repayment": { "annual_quota": null, "required_months": 6, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "renovation": { "annual_quota": 100000, "required_months": 6, "needs_voucher": true, "needs_family_auth": false, "frequency_years": 5 },
+            "property_fee": { "annual_quota": 4800, "required_months": 3, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "elderly_friendly": { "annual_quota": 30000, "required_months": 6, "needs_voucher": true, "needs_family_auth": true, "frequency_years": null },
+            "elevator": { "annual_quota": 20000, "required_months": 6, "needs_voucher": true, "needs_family_auth": true, "frequency_years": null },
+            "major_illness": { "annual_quota": null, "required_months": 3, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null }
+          }
+        },
+        {
+          "version": 2,
+          "effective_from": "2026-10-01",
+          "effective_to": null,
+          "rules": {
+            "purchase": { "annual_quota": null, "required_months": 6, "needs_voucher": false, "needs_family_auth": false, "frequency_years": null },
+            "construction": { "annual_quota": null, "required_months": 6, "needs_voucher": false, "needs_family_auth": false, "frequency_years": null },
+            "rent": { "annual_quota": 24000, "required_months": 3, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "loan_repayment": { "annual_quota": null, "required_months": 6, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "renovation": { "annual_quota": 80000, "required_months": 6, "needs_voucher": true, "needs_family_auth": false, "frequency_years": 5 },
+            "property_fee": { "annual_quota": 3600, "required_months": 3, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "elderly_friendly": { "annual_quota": 30000, "required_months": 6, "needs_voucher": true, "needs_family_auth": true, "frequency_years": null },
+            "elevator": { "annual_quota": 20000, "required_months": 6, "needs_voucher": true, "needs_family_auth": true, "frequency_years": null },
+            "major_illness": { "annual_quota": null, "required_months": 3, "needs_voucher": true, "needs_family_auth": true, "frequency_years": null }
+          }
+        }
+      ]
+    },
+    {
+      "city_code": "330199",
+      "city_name": "越城（虚构）",
+      "mutual_recognition_from": "2026-08-01",
+      "versions": [
+        {
+          "version": 1,
+          "effective_from": "2026-01-01",
+          "effective_to": null,
+          "rules": {
+            "purchase": { "annual_quota": null, "required_months": 12, "needs_voucher": false, "needs_family_auth": false, "frequency_years": null },
+            "construction": { "annual_quota": null, "required_months": 12, "needs_voucher": false, "needs_family_auth": false, "frequency_years": null },
+            "rent": { "annual_quota": 18000, "required_months": 3, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "loan_repayment": { "annual_quota": null, "required_months": 12, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "renovation": { "annual_quota": 120000, "required_months": 12, "needs_voucher": true, "needs_family_auth": false, "frequency_years": 5 },
+            "property_fee": { "annual_quota": 4200, "required_months": 3, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null },
+            "elderly_friendly": { "annual_quota": 40000, "required_months": 12, "needs_voucher": true, "needs_family_auth": true, "frequency_years": null },
+            "elevator": { "annual_quota": 25000, "required_months": 12, "needs_voucher": true, "needs_family_auth": true, "frequency_years": null },
+            "major_illness": { "annual_quota": null, "required_months": 6, "needs_voucher": true, "needs_family_auth": false, "frequency_years": null }
+          }
+        }
+      ]
+    }
+  ]
+}

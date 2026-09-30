@@ -1,0 +1,110 @@
+{
+  "accounts": [
+    {
+      "account_id": "A001",
+      "person_id": "P001",
+      "city_code": "320199",
+      "holder_name": "样例甲",
+      "balance": 156000,
+      "frozen": 0,
+      "status": "normal",
+      "transfer": null,
+      "contributions": [
+        { "city_code": "330199", "consecutive_months": 10, "remote": true },
+        { "city_code": "320199", "consecutive_months": 8, "remote": false }
+      ],
+      "family_auths": [
+        { "scenario": "elderly_friendly", "granted_at": "2026-09-20", "member": "样例甲配偶", "revoked_at": null }
+      ],
+      "vouchers": [
+        { "voucher_id": "V-1001", "scenario": "renovation", "amount": 120000, "issued_at": "2026-09-26", "valid": true },
+        { "voucher_id": "V-1002", "scenario": "property_fee", "amount": 4800, "issued_at": "2026-09-15", "valid": true }
+      ],
+      "usage_history": [
+        { "case_id": "C-2024-0007", "scenario": "renovation", "amount": 30000, "year": 2024, "state": "paid", "used_at": "2024-05-10" }
+      ],      "restrictions": []
+    },
+    {
+      "account_id": "A002",
+      "person_id": "P002",
+      "city_code": "320199",
+      "holder_name": "样例乙",
+      "balance": 42000,
+      "frozen": 0,
+      "status": "normal",
+      "transfer": null,
+      "contributions": [
+        { "city_code": "320199", "consecutive_months": 30, "remote": false }
+      ],
+      "family_auths": [],
+      "vouchers": [
+        { "voucher_id": "V-2001", "scenario": "renovation", "amount": 50000, "issued_at": "2026-09-10", "valid": true }
+      ],
+      "usage_history": [],
+      "restrictions": [
+        { "type": "fraudulent_withdrawal", "from_date": "2025-03-01", "years": 3 }
+      ]
+    },
+    {
+      "account_id": "A003",
+      "person_id": "P003",
+      "city_code": "330199",
+      "holder_name": "样例丙",
+      "balance": 88000,
+      "frozen": 0,
+      "status": "normal",
+      "transfer": null,
+      "contributions": [
+        { "city_code": "330199", "consecutive_months": 60, "remote": false }
+      ],
+      "family_auths": [],
+      "vouchers": [
+        { "voucher_id": "V-3001", "scenario": "elevator", "amount": 30000, "issued_at": "2026-09-12", "valid": true }
+      ],
+      "usage_history": [],
+      "restrictions": [
+        { "type": "loan_fraud", "from_date": "2024-06-01", "years": 5 }
+      ]
+    },
+    {
+      "account_id": "A004",
+      "person_id": "P004",
+      "city_code": "320199",
+      "holder_name": "样例丁",
+      "balance": 73000,
+      "frozen": 73000,
+      "status": "transfer_frozen",
+      "transfer": { "from_city": "330199", "to_city": "320199", "started_at": "2026-09-18", "released_at": null },
+      "contributions": [
+        { "city_code": "330199", "consecutive_months": 24, "remote": true },
+        { "city_code": "320199", "consecutive_months": 2, "remote": false }
+      ],
+      "family_auths": [],
+      "vouchers": [
+        { "voucher_id": "V-4001", "scenario": "property_fee", "amount": 3000, "issued_at": "2026-09-20", "valid": true }
+      ],
+      "usage_history": [],
+      "restrictions": []
+    },
+    {
+      "account_id": "A005",
+      "person_id": "P005",
+      "city_code": "320199",
+      "holder_name": "样例戊",
+      "balance": 210000,
+      "frozen": 0,
+      "status": "normal",
+      "transfer": null,
+      "contributions": [
+        { "city_code": "330199", "consecutive_months": 7, "remote": true },
+        { "city_code": "320199", "consecutive_months": 1, "remote": false }
+      ],
+      "family_auths": [],
+      "vouchers": [
+        { "voucher_id": "V-5001", "scenario": "renovation", "amount": 130000, "issued_at": "2026-09-27", "valid": true }
+      ],
+      "usage_history": [],
+      "restrictions": []
+    }
+  ]
+}
